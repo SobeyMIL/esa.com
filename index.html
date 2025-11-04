@@ -1,0 +1,863 @@
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ESA</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <style>
+      .experiment-group {
+        margin: 20px 0;
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+      .experiment-title {
+        color: #333;
+        margin: 0 0 15px 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eee;
+      }
+      /* 确保容器支持块级显示 */
+      .text-to-3d-examplesss {
+        display: block;
+      }
+      /* 隐藏 expand_more 图标中的右箭头 */
+      .teaser-expand .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+
+      /* 视频容器内联显示 */
+      .video-container {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      /* 文字内容两端对齐 */
+      .hero-body, .container, section, p, .publication-title, .publication-authors, .caption, .section, .GPU Usage, .userstudy {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      /* 段落首行缩进 */
+      p {
+        text-indent: 2em;
+      }
+      /* 标题保持居中 */
+      .publication-title {
+        text-align: center;
+        text-indent: 0;
+      } 
+      #teaser img[src="pic/sketch.png"],img[src="pic/Subjective_table.png"],img[src="pic/TransitionMatrixVisualization.jpg"],img[src="pic/objective_table.png"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+      p.caption strong{
+      font-weight: bold;
+      font-size: 1.2em;
+      }
+
+    </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h3 class="xtitle is-1 publication-title">ESA: 
+              Energy-Based Shot Assembly Optimization for Intelligent Video Editing</h3>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+
+                <span class="author-block">
+                  <a href="https://scholar.google.com.hk/citations?user=HvWZhM4AAAAJ&hl=zh-CN" target="_blank">Yaosen Chen</a><sup>1,2*</sup>
+		  <a href="https://scholar.google.com.hk/citations?user=tfJVFEcAAAAJ&hl=zh-CN" target="_blank">Wei Wang</a><sup>1</sup>
+		Tianheng Zheng</a><sup>1,3</sup>
+		Xuming Wen</a><sup>1</sup>
+		Han Yang</a><sup>1</sup>
+		<a href="https://scholar.google.com/citations?user=6I1ytegAAAAJ&hl=zh-CN&oi=ao" target="_blank">Yanru Zhang</a><sup>2</sup>
+
+                </span>
+
+
+
+                  </div>
+                  <br>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      <sup>1</sup> Media Intelligence Laboratory, ChengDu Sobey Digital Technology Co., Ltd &nbsp;&nbsp;&nbsp;
+			<sup>2</sup> University of Electronic Science and Technology of China &nbsp;&nbsp;&nbsp;
+			<sup>3</sup> SiChuan University &nbsp;&nbsp;&nbsp;
+
+                      </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates The Corresponding Author</small></span>
+                  </div>
+
+                  <!--
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2303.09170.pdf" target="_blank"
+                        class="external-link ">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  
+                  <span class="link-block">
+                    <a href="https://github.com/semchan/NLUT" target="_blank"
+                    class="external-link ">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              -->
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <title>ESA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+  <p class="section"> </p>
+    <section id="teaser" class="flex-row">
+            
+                <img width="60%" src="pic/sketch.png" >
+            </a>
+        <p class="caption">
+            Transferring photorealistic style with a style image for the video.Energy-based shot assembly optimization. Given a specific theme and a library of video clips, our method employs an energy-based model to search for an optimal shot assembly that aligns with the thematic semantics, editing syntax, and user intent. Combined with additional post-production processes such as voice-overs and subtitles, this approach enables high-quality, intelligent video editing.
+        </p>
+    </section>
+
+  <p class="section">Abstract</p>
+  <p>
+    Shot assembly is a crucial step in film production and video editing, involving the sequencing and arrange ment of shots to construct a narrative, convey information, or evoke emotions. Traditionally, this process has been manually executed by experienced editors. While current intelligent video editing technologies can handle some automated video editing tasks, they often fail to capture the creator’s unique artistic expression in shot assembly. To address this challenge, we propose an energy-based optimization method for video shot assembly. Specifically, we first perform visual-semantic matching between the script generated by a large language model and a video library to obtain subsets of candidate shots aligned with the script semantics. Next, we segment and label the shots from reference videos, extracting attributes such as shot size, motion, and semantics. We then employ energy-based models to learn from these attributes, scoring candidate shot sequences based on their alignment with reference styles. Finally, we achieve shot assembly optimization by combining multiple syntax rules, producing videos that align with the assembly style of the reference videos. Our method not only automates the arrangement and combination of independent shots according to specific logic, narrative requirements, or artistic styles but also learns the assembly style of reference videos, creating a coherent visual sequence or holistic visual expression. With our system, even users with no prior video editing experience can create visually compelling videos.<br>
+  </p>
+  <p class="section" id="results">Approach</p>
+  <img src="pic/overview.png" class="architecture">
+  <p>
+    Our approach consists of modules such as "Shot Segmentation and Label Extraction", "Visual-Semantic Matching", and "Multi-Syntax Joint Assembly Optimization". These modules work together to automatically generate an edited video sequence that reflects the shot scale style and camera motion style of a reference sequence. The core idea is to integrate semanic analysis, visual matching, and energy-based model optimization into a multimodal joint optimization process.<br>
+    <br>
+    Given a user-provided textual description, we first retrieve candidate video shots from a video library that semantically match the text. We then segment these candidate shots and extract shot-related labels that are relevant to the text. These labels, combined with shot syntax rules, provide structured semantic guidance for the shot assembly optimization. Building on this foundation, the frame work employs an energy-based model to evaluate the quality of the combined sequence. The energy model considers multiple objectives, including the alignment of textual semantics with video content, visual continuity between shots, temporal logic consistency, and adherence to shot syntax rules.
+  </p>
+
+  <p class="section" id="results">Comparison</p>
+  <div class="text-to-3d-examplesss">
+    <div class="experiment-group">
+      <h3 class="experiment-title">Reference video 1 - Traveling</h3>
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/reference/Ipartment_cut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Reference video</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/traveling/turbo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurbo</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/traveling/turboclip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurboClip</p>
+        </div>
+      </div>
+
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/traveling/ours.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Ours</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/traveling/capcut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Capcut</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/traveling/jichuang.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">JichuangAI</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiment-group">
+      <h3 class="experiment-title">Reference video 1 - Military</h3>
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/reference/Ipartment_cut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Reference video</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/military/turbo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurbo</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/military/turboclip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurboClip</p>
+        </div>
+      </div>
+      
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/military/ours.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Ours</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/military/capcut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Capcut</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/military/jichuang.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">JichuangAI</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiment-group">
+      <h3 class="experiment-title">Reference video 1 - Shopping</h3>
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/reference/Ipartment_cut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Reference video</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/shopping/turbo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurbo</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/shopping/turboclip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurboClip</p>
+        </div>
+      </div>
+      
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/shopping/ours.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Ours</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/shopping/capcut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Capcut</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/shopping/jichuang.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">JichuangAI</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiment-group">
+      <h3 class="experiment-title">Reference video 2 - cooking</h3>
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/reference/liziqi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Reference video</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/cooking/turbo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurbo</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/cooking/turboclip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurboClip</p>
+        </div>
+      </div>
+      
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/cooking/ours.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Ours</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/cooking/capcut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Capcut</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/cooking/jichuang.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">JichuangAI</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiment-group">
+      <h3 class="experiment-title">Reference video 2 - bbq</h3>
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/reference/liziqi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Reference video</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/bbq/turbo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurbo</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/bbq/turboclip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurboClip</p>
+        </div>
+      </div>
+      
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/bbq/ours.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Ours</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/bbq/capcut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Capcut</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/bbq/jichuang.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">JichuangAI</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiment-group">
+      <h3 class="experiment-title">Reference video 2 - chicken</h3>
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/reference/liziqi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Reference video</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/chicken/turbo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurbo</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/chicken/turboclip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">MoneyPrinterTurboClip</p>
+        </div>
+      </div>
+      
+      <div class="video-row">
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/chicken/ours.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Ours</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/chicken/capcut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">Capcut</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls muted loop>
+            <source src="pic/chicken/jichuang.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-title">JichuangAI</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="teaser-expand">
+    <span class="material-symbols-outlined" onclick="teaser_expand_contract1(this)">expand_more</span>
+  </div>
+  </section>
+
+  
+  
+   
+  <p>
+  </p>
+  <p class="section" id="results">Experiments</p>
+  
+ 
+        <p class="caption">
+            <strong><b>Comparison of Subjective Video Similarity Scores:</b></strong>
+        </p>
+        <img width="100%" src="pic/VideoEditingVisualization.jpg" >
+        <strong><b>Visual Comparison of Video Editing.</b> We compare the results of video editing using the same ``Script Text Content" and ``Video Repository," and our method achieves better visual-text alignment.</strong>
+
+        <br>
+        <br>
+        <br>
+        <img width="80%" src="pic/Subjective_table.png" >
+        <br>
+        <strong><b>Comparison of Subjective Video Similarity Scores.</b> This table presents the performance of different video generation methods in experiments based on two distinct reference videos. The methods are evaluated on four metrics: Semantic Matching Score (SMC), Camera Motion Similarity (CMS), Shot Size Similarity (SSS), and Overall Style Similarity (OSS). These metrics collectively reflect the stylistic similarity between the generated and reference videos.</strong>
+
+
+        <br>
+        <br>
+        <br>
+        <p class="caption">
+            <strong><b>Comparison of Objective Video Similarity Scores:</b></strong>
+        </p>
+        <img width="80%" src="pic/TransitionMatrixVisualization.jpg" ><br>
+        <strong><b>Visual Comparison of the Transition Score Matrices for Shot Size and Camera Motion Syntax in the Edited Videos.</b> S0 to S4 respectively represent the shot size attributes: Extreme Long Shot (ELS), Long Shot (LS), Medium Shot (MS), Close-Up (CU), and Extreme Close-Up (ECU). C0 to C6 respectively represent the camera motion attributes: Stable, Up, Down, Left, Right, Out, and In.</strong>
+
+        <br>
+        <br>
+        <br>
+        <img width="60%" src="pic/objective_table.png" >
+        <br>
+        <strong><b>Comparison of Subjective Video Similarity Scores.</b> This table presents the performance of different video generation methods in experiments based on two distinct reference videos. The methods are evaluated on four metrics: Semantic Matching Score (SMC), Camera Motion Similarity (CMS), Shot Size Similarity (SSS), and Overall Style Similarity (OSS). These metrics collectively reflect the stylistic similarity between the generated and reference videos.</strong>
+
+        
+
+  <p class="section" id="BibTeX">BibTeX</p>
+
+  <blockquote>
+    <pre>
+
+      xxxxxx
+      </pre>
+  </blockquote>
+
+
+</div>
+
+<script>
+
+  const teaserContainer = document.getElementsByClassName("text-to-3d-examples")[0];
+  function teaser_expand_contract(element) {
+    if (element.textContent == "expand_more") {
+      teaserContainer.style.setProperty("white-space", "unset");
+      element.textContent = "expand_less";
+    } else {
+      teaserContainer.style.setProperty("white-space", "nowrap");
+      element.textContent = "expand_more";
+    }
+  }
+
+  const teaserContainer2 = document.getElementsByClassName("text-to-3d-examplesss")[0];
+  // 修改实验组容器的显示方式，使其支持按行显示
+  teaserContainer2.style.display = 'block';
+  
+  function teaser_expand_contract1(e) {
+    if (e.textContent == "expand_more") {
+      // 点击 expand_more 时展开所有视频
+      teaserContainer2.style.setProperty("white-space", "unset");
+      // 显示所有实验组
+      const experimentGroups = document.querySelectorAll('.experiment-group');
+      experimentGroups.forEach(group => {
+        group.style.display = 'block';
+      });
+      e.textContent = "expand_less";
+    } else {
+      // 点击 expand_less 时收起，只显示第一个实验组
+      teaserContainer2.style.setProperty("white-space", "unset");
+      // 隐藏除第一个外的所有实验组
+      const experimentGroups = document.querySelectorAll('.experiment-group');
+      for (let i = 1; i < experimentGroups.length; i++) {
+        experimentGroups[i].style.display = 'none';
+      }
+      e.textContent = "expand_more";
+    }
+  }
+  
+  // 初始化实验组显示状态
+  document.addEventListener('DOMContentLoaded', function() {
+    const experimentGroups = document.querySelectorAll('.experiment-group');
+    // 确保容器是 block 显示
+    teaserContainer2.style.display = 'block';
+    // 确保第一个实验组显示
+    if (experimentGroups.length > 0) {
+      experimentGroups[0].style.display = 'block';
+    }
+    // 隐藏除第一个外的所有实验组
+    for (let i = 1; i < experimentGroups.length; i++) {
+      experimentGroups[i].style.display = 'none';
+    }
+  });
+
+
+
+  const teaserContainer3 = document.getElementsByClassName("text-to-reuslts")[0];
+  function teaser_expand_contract2(e1) {
+    if (e1.textContent == "expand_more") {
+      teaserContainer3.style.setProperty("white-space", "unset");
+      teaserContainer3.style.setProperty("display", "block");
+      e1.textContent = "expand_less";
+    } else {
+      teaserContainer3.style.setProperty("display", "flex");
+      e1.textContent = "expand_more";
+    }
+  }
+</script>
+
+
+
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+<script type="module">
+
+  import * as THREE from "https://unpkg.com/three?module";
+
+  import { OrbitControls } from "https://unpkg.com/three/examples/jsm/controls/OrbitControls.js?module";
+  import { PCDLoader } from 'https://unpkg.com/three/examples/jsm/loaders/PCDLoader.js?module';
+
+  let cameras = [], scenes = [], renderers = [];
+  // let path = "assets/kitchen_every_10.pcd";
+  // let path = "assets/bedroom_every_10.pcd";
+  let renderer_elements = document.getElementsByClassName("viewer-3d");
+  let metadata = {
+    "kitchen": {
+      "path": "assets/kitchen_every_10.pcd",
+      "posx": 3,
+      "posy": 3,
+      "posz": 9,
+      "rotx": -0.25,
+      "roty": 0.5,
+      "rotz": 0.1,
+    },
+    "bedroom": {
+      "path": "assets/bedroom_every_10.pcd",
+      "posx": -0.07,
+      "posy": 0.41,
+      "posz": 10,
+      "rotx": -0.04,
+      "roty": 0.0,
+      "rotz": 0.0,
+    },
+  };
+
+  init();
+  render();
+
+  function init() {
+    for (let i = 0; i < renderer_elements.length; i++) {
+      let renderer_element = renderer_elements[i];
+      if (renderer_element.getElementsByTagName("canvas").length != 0) {
+        // Already initialized.
+        continue;
+      }
+      let data = metadata[renderer_element.id];
+      let path = data["path"];
+      let renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderers.push(renderer);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setSize(renderer_element.clientWidth, renderer_element.clientWidth);
+      renderer_element.appendChild(renderer.domElement);
+
+      let scene = new THREE.Scene();
+      scenes.push(scene);
+      scene.background = new THREE.Color(0xeeeeee);
+
+      let camera = new THREE.PerspectiveCamera(30, 1, 0.01, 40);
+      cameras.push(camera);
+      // camera.position.set( 0, 0, 10 );
+      camera.position.set(data["posx"], data["posy"], data["posz"]);
+      camera.rotation.x = data["rotx"];
+      camera.rotation.y = data["roty"];
+      camera.rotation.z = data["rotz"];
+
+      scene.add(camera);
+
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.addEventListener('change', render); // use if there is no animation loop
+      controls.minDistance = 0.5;
+      controls.maxDistance = 10;
+
+      const loader = new PCDLoader();
+      loader.load(path, function (points) {
+
+        points.geometry.center();
+        points.geometry.rotateX(Math.PI);
+        points.name = path;
+        points.material.size *= 8;
+        scene.add(points);
+        render();
+      });
+    }
+  }
+
+  const resizeObserver = new ResizeObserver((entries) => {
+    for (const entry of entries) {
+      for (const renderer of renderers) {
+        renderer.setSize(entry.contentRect.width, entry.contentRect.width);
+      }
+    }
+  });
+
+  for (const renderer_element of renderer_elements) {
+    resizeObserver.observe(renderer_element);
+  }
+
+  function render() {
+    for (let i = 0; i < scenes.length; i++) {
+      renderers[i].render(scenes[i], cameras[i]);
+    }
+  }
+
+  const imageDepthResizeObserver = new ResizeObserver((entries) => {
+    initComparisons();
+  });
+
+  imageDepthResizeObserver.observe(document.getElementsByClassName('mono-depth-results-container')[0]);
+
+  var baseImages = document.getElementsByClassName("img-comp-base");
+  var overlayImages = document.getElementsByClassName("img-comp-overlay");
+  // Sliders for image / depth comparison.
+  function initComparisons() {
+    var i;
+    for (i = 0; i < overlayImages.length; i++) {
+      /* Once for each "overlay" element:
+      pass the "overlay" element as a parameter when executing the compareImages function: */
+      compareImages(overlayImages[i], baseImages[i]);
+    }
+    function compareImages(img, base_img) {
+      var slider, img, clicked = 0, w, h;
+      /* Get the width and height of the img element */
+      w = base_img.offsetWidth;
+      h = base_img.offsetHeight;
+      /* Set the width of the img element to 50%: */
+      img.style.width = (w / 2) + "px";
+      /* Create slider: */
+      let createSlider = (img.parentElement.getElementsByClassName('img-comp-slider').length == 0);
+      if (createSlider) {
+        slider = document.createElement("DIV");
+        slider.setAttribute("class", "img-comp-slider");
+        /* Insert slider */
+        img.parentElement.insertBefore(slider, img);
+      } else {
+        slider = img.parentElement.getElementsByClassName("img-comp-slider")[0];
+      }
+      /* Position the slider in the middle: */
+      slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+      slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+      /* Execute a function when the mouse button is pressed: */
+      slider.addEventListener("mousedown", slideReady);
+      /* And another function when the mouse button is released: */
+      window.addEventListener("mouseup", slideFinish);
+      /* Or touched (for touch screens: */
+      slider.addEventListener("touchstart", slideReady);
+      /* And released (for touch screens: */
+      window.addEventListener("touchend", slideFinish);
+      function slideReady(e) {
+        /* Prevent any other actions that may occur when moving over the image: */
+        e.preventDefault();
+        /* The slider is now clicked and ready to move: */
+        clicked = 1;
+        /* Execute a function when the slider is moved: */
+        window.addEventListener("mousemove", slideMove);
+        window.addEventListener("touchmove", slideMove);
+      }
+      function slideFinish() {
+        /* The slider is no longer clicked: */
+        clicked = 0;
+      }
+      function slideMove(e) {
+        var pos;
+        /* If the slider is no longer clicked, exit this function: */
+        if (clicked == 0) return false;
+        /* Get the cursor's x position: */
+        pos = getCursorPos(e)
+        /* Prevent the slider from being positioned outside the image: */
+        if (pos < 0) pos = 0;
+        if (pos > w) pos = w;
+        /* Execute a function that will resize the overlay image according to the cursor: */
+        slide(pos);
+      }
+      function getCursorPos(e) {
+        var a, x = 0;
+        e = (e.changedTouches) ? e.changedTouches[0] : e;
+        /* Get the x positions of the image: */
+        a = img.getBoundingClientRect();
+        /* Calculate the cursor's x coordinate, relative to the image: */
+        x = e.pageX - a.left;
+        /* Consider any page scrolling: */
+        x = x - window.pageXOffset;
+        return x;
+      }
+      function slide(x) {
+        /* Resize the image: */
+        img.style.width = x - 0.05 + "px";
+        /* Position the slider: */
+        slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+      }
+    }
+  }
+
+  initComparisons();
+
+</script>
+
+</body>
+
+</html>
